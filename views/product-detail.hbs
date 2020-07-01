@@ -1,0 +1,25 @@
+<h1 style="color: brown;">Product Details</h1>
+
+<div style="margin-left: 20px;">
+    <h1>{{name}}</h1>
+    <h3>{{ description }}</h3>
+    <h3>${{ price }}</h3>
+</div>
+
+<hr>
+<h3>Recent Comments</h3>
+    
+<hr>
+
+<h3 style="color: darkgreen;">Send your comment</h3>
+<form action="/send-message" method="POST">
+    <label for="author"><b>Your name</b>
+        <input type="text" name="author" id="author">
+    </label><br />
+    <label for="comment"><b>Message</b>
+        <textarea name="comment" id="comment" rows="10"></textarea>
+    </label>
+</form>
+
+<hr>
+<a href="/products">Back to products</a>
